@@ -1,5 +1,12 @@
 # Docker Commands with examples
 
+## Assigning Ports to a container
+The port can be assigned to a container by -p command
+The port mapping has to be done from host to container
+    
+### While starting a container
+    docker run -it -p <host-port>:<container-port> <docker-image>
+
 ## Network:
 
 ### Create docker network:
