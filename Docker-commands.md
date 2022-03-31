@@ -1,5 +1,15 @@
 # Docker Commands with examples
 
+
+## Showing all the Docker images
+    docker images -a
+    
+## Removing all Docker images
+    docker rmi $(docker images -a -q)
+When the -q flag is passed to rmi, all the images are removed
+[How to remove Docker containers and volumes](https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes)
+
+
 ## Assigning Ports to a container
 The port can be assigned to a container by -p command
 The port mapping has to be done from host to container
